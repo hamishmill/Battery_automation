@@ -33,7 +33,7 @@ def get_solcast_forecast():
     prediction_dataframe['date'] = prediction_dataframe['date'].dt.date
 
     #print(prediction_dataframe)
-    tomorrow = date.today() + timedelta(days = 0)
+    tomorrow = date.today() + timedelta(days = 1)
     #sum all the values that match up with tomorrows date specifically
     tomorrow_predicted_pv = prediction_dataframe[prediction_dataframe['date'] == tomorrow]['pv_estimate'].sum()/2
 

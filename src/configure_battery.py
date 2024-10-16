@@ -1,6 +1,6 @@
-from get_solcast_forecast import get_solcast_forecast
-from get_weekly_average import get_weekly_average
-from set_battery import set_battery_charge
+from .get_solcast_forecast import get_solcast_forecast
+from .get_weekly_average import get_weekly_average
+from .set_battery import set_battery_charge
 
 def configure_battery():
     #get consumption
